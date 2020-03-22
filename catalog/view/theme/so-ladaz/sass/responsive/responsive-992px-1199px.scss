@@ -1,0 +1,83 @@
+ @include breakpoint(md){
+
+    /* ***********************************************************************************************
+        BLOCK HEADER  
+    *************************************************************************************************/
+
+     /*[] HEADER 1 []*/ 
+    header{
+        .horizontal ul.megamenu > li.buy_color{ display: none; }
+    }
+
+    /*[] HEADER 1 []*/ 
+    header.typeheader-1{
+    	.header-bottom .container .header-bottom-inner .header_custom_link{ padding: 0; }
+        .block-cart{ padding-#{$left}: 15px; }
+        .header-bottom .container .header-bottom-inner .header_custom_link ul li a{ @include if-rtl {padding: side-values(0 5px 0 0);} }
+    }
+
+
+
+
+    /************************************************************************************************
+        BLOCK HOME PAGE  
+    *************************************************************************************************/
+
+    /*[] LAYOUT 1 []*/
+    .layout-1{
+        .slide-right .col-s-1 { margin-bottom: 27px; }
+        .module.custom-bannerct .banner-ct2 { margin-bottom: 23px; }
+        .module.custom-lt2 .so-listing-tabs .ltabs-tabs-container .ltabs-tabs li.ltabs-tab > span{ font-size: 14px; }
+        .slide-right .col-s-1 {
+            margin-bottom: 27px;
+        }
+    }
+
+    /* ***********************************************************************************************
+        BLOCK FOOTER  
+    ************************************************************************************************ */
+
+    /*[] FOOTER 1 []*/
+    footer{
+    	.social_block ul.social-block li a{ width: 20px; }
+        .news-letter .block_content .input-box input{ width: 180px; }
+        .box-footer:last-child,
+        .box-footer.box-account,
+        .box-footer.box-information{ padding-#{$left}: 15px; }
+        .payment-method li{ margin: 0; }
+        .news-letter{ margin-bottom: 10px!important; }
+        .social_block{ margin-bottom: 10px!important;}
+    } 
+    /*[] FOOTER 3 []*/
+    footer.typefooter-1{
+        .news-letter .block_content{ padding: 0; }
+        .news-letter .block_content .input-box input { width: 210px; }
+        .news-letter .block_content .subcribe button{ padding: 0px 5px; font-size: 12px; text-transform: capitalize; }
+        .footer-right {  width: 72%; }
+        .footer-left {  width: 28%; }
+        .footer-navbar .social-block { padding-bottom: 10px; margin-top: 5px;}
+        .footer-navbar .footer-center .box-footer-sp{ padding-#{$left}: 15px;  }
+        .footer-navbar .footer-center .content-sp a {  font-size: 12px;  }
+    } 
+
+    /************************************************************************************************
+        MEGAMENU 
+    *************************************************************************************************/
+   .horizontal ul.megamenu > li > .sub-menu{
+        #{$right}: 0;
+        #{$left}: auto;
+   }
+   .blog-listitem .blog-item .itemBlogContent .blog-meta > span{ padding-#{$right}: 10px }
+    /************************************************************************************************
+        PAGE LISTING  
+    *************************************************************************************************/
+    #wrapper{ overflow-x: hidden; }
+    .thumb-vertical-outer { padding: 20px 0;}
+    .releate-products .image, div.so-extraslider.grid .image{ width: 40%;}
+    div.products-list.grid .product-layout .product-item-container{
+        .left-block .quickview,
+        .button-group button{opacity: 1;}
+    }
+    .producttab .tabsslider .nav-tabs li a{ padding: 10px; }
+}
+
